@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- No permissions needed at all. -->
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Re-calibrates every widget when date, time, timezone or language changes,
+             and when the midnight alarm fires. -->
+        <receiver
+            android:name=".TickReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Eight widget styles -->
+        <receiver
+            android:name=".NeonWidget"
+            android:exported="true"
+            android:label="@string/w_neon">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_neon" />
+        </receiver>
+
+        <receiver
+            android:name=".SunsetWidget"
+            android:exported="true"
+            android:label="@string/w_sunset">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_sunset" />
+        </receiver>
+
+        <receiver
+            android:name=".CleanWidget"
+            android:exported="true"
+            android:label="@string/w_clean">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_clean" />
+        </receiver>
+
+        <receiver
+            android:name=".PinkWidget"
+            android:exported="true"
+            android:label="@string/w_pink">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_pink" />
+        </receiver>
+
+        <receiver
+            android:name=".GoldWidget"
+            android:exported="true"
+            android:label="@string/w_gold">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_gold" />
+        </receiver>
+
+        <receiver
+            android:name=".SaffronWidget"
+            android:exported="true"
+            android:label="@string/w_saffron">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_saffron" />
+        </receiver>
+
+        <receiver
+            android:name=".OceanWidget"
+            android:exported="true"
+            android:label="@string/w_ocean">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_ocean" />
+        </receiver>
+
+        <receiver
+            android:name=".GiantWidget"
+            android:exported="true"
+            android:label="@string/w_giant">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/info_giant" />
+        </receiver>
+    </application>
+</manifest>

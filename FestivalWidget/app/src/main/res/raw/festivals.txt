@@ -1,0 +1,60 @@
+# Festival list used by every widget.
+#
+#   MM-DD,Name          repeats every year (fixed-date days)
+#   YYYY-MM-DD,Name     one-off date (festivals that follow the lunar calendar)
+#
+# When two festivals share a date, the one listed FIRST is shown.
+# To add or fix a festival just add a line, then rebuild the app.
+# Lunar dates can differ by a day between regions, and Eid depends on moon sighting.
+
+# ---- Yearly (fixed date) ----
+01-01,New Year
+01-26,Republic Day
+02-14,Valentine's Day
+02-19,Shivaji Jayanti
+03-08,Women's Day
+04-14,Ambedkar Jayanti
+05-01,Labour Day
+08-15,Independence Day
+09-05,Teachers' Day
+10-02,Gandhi Jayanti
+11-14,Children's Day
+12-25,Christmas
+12-31,New Year's Eve
+
+# ---- 2026 ----
+2026-11-15,Chhath Puja
+2026-11-20,Kartiki Ekadashi
+2026-11-24,Guru Nanak Jayanti
+
+# ---- 2027 ----
+2027-01-15,Makar Sankranti
+2027-01-15,Pongal
+2027-02-11,Vasant Panchami
+2027-03-06,Maha Shivratri
+2027-03-10,Eid al-Fitr
+2027-03-21,Holika Dahan
+2027-03-22,Holi
+2027-03-26,Good Friday
+2027-03-28,Easter
+2027-04-07,Gudi Padwa
+2027-04-15,Ram Navami
+2027-04-19,Mahavir Jayanti
+2027-04-20,Hanuman Jayanti
+2027-05-09,Akshaya Tritiya
+2027-05-17,Eid al-Adha
+2027-06-16,Muharram
+2027-07-05,Rath Yatra
+2027-07-18,Guru Purnima
+2027-08-17,Raksha Bandhan
+2027-08-25,Janmashtami
+2027-09-04,Ganesh Chaturthi
+2027-10-07,Durga Ashtami
+2027-10-09,Dussehra
+2027-10-18,Karwa Chauth
+2027-10-27,Dhanteras
+2027-10-29,Diwali
+2027-10-30,Govardhan Puja
+2027-10-31,Bhai Dooj
+2027-11-04,Chhath Puja
+2027-11-14,Kartik Purnima

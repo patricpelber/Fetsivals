@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Festival Calendar</string>
+    <string name="hint">Long-press your home screen, tap Widgets, and pick any Festival Calendar style.</string>
+    <string name="upcoming">COMING UP</string>
+
+    <string name="next_festival">NEXT FESTIVAL</string>
+    <string name="today">Today!</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="in_days">in %d days</string>
+    <string name="big_today">IT\'S TODAY!</string>
+    <string name="big_day">DAY TO GO</string>
+    <string name="big_days">DAYS TO GO</string>
+
+    <string name="w_neon">Festival · Neon Night</string>
+    <string name="w_sunset">Festival · Retro Sunset</string>
+    <string name="w_clean">Festival · Clean White</string>
+    <string name="w_pink">Festival · Pink Pop</string>
+    <string name="w_gold">Festival · Royal Gold</string>
+    <string name="w_saffron">Festival · Saffron</string>
+    <string name="w_ocean">Festival · Ocean Splash</string>
+    <string name="w_giant">Festival · Giant Countdown</string>
+</resources>
